@@ -147,8 +147,8 @@ public class Robot extends LinearOpMode {
 
         LF.setDirection(DcMotor.Direction.REVERSE); // Set to REVERSE if using AndyMark motors
         LB.setDirection(DcMotor.Direction.REVERSE);// Set to FORWARD if using AndyMark motors
-        //LED.setDirection(DcMotor.Direction.REVERSE);// Set to FORWARD if using AndyMark motors
-        Elevator.setDirection(DcMotor.Direction.REVERSE);
+        LED.setDirection(DcMotor.Direction.REVERSE);// Set to FORWARD if using AndyMark motors
+        Elevator.setDirection(DcMotor.Direction.FORWARD);
         Meter.setDirection(DcMotor.Direction.REVERSE);
         //   IntakeL.setDirection(DcMotor.Direction.REVERSE);// Set to REVERSE the intake System
 //        leftLinearMotor.setDirection(DcMotor.Direction.REVERSE);//set to rverse the elevator system
@@ -158,7 +158,6 @@ public class Robot extends LinearOpMode {
         digitalTouch.setMode(DigitalChannel.Mode.INPUT);
         MagnetDigitalTouch.setMode(DigitalChannel.Mode.INPUT);
         //rightLinearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-
 
         // Set all motors to zero power
         LF.setPower(0);
